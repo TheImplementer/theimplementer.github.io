@@ -5,6 +5,9 @@ email: enrico.pelizzon@gmail.com
 description: "A simple blog with thoughts about software development" 
 baseurl: ""
 url: "http://theimplementer.github.io"
+twitter_username: the_implementer
+linkedin_username: epelizzon
+github_username: theimplementer
 
 # Build settings
 markdown: kramdown
