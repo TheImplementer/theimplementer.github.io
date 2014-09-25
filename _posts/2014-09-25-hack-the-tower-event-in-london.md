@@ -25,4 +25,4 @@ Hope I'll see you there! ;-)
 
 P.S. Here's the view you can get from there:
 
-![alt Heron Tower](https://lh3.googleusercontent.com/-_4q4m3pkFQo/U25JN-kl1WI/AAAAAAAABsA/Vz7luICX-0w/w1300-h975-no/IMG_20140510_164036.jpg Heron Tower)
+![](https://lh3.googleusercontent.com/-_4q4m3pkFQo/U25JN-kl1WI/AAAAAAAABsA/Vz7luICX-0w/w1300-h975-no/IMG_20140510_164036.jpg =500x350)
