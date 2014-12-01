@@ -37,13 +37,13 @@ You can see the result at the following link:
 The resulting class is an iterator that generates the specified file's lines along with their length by returning objects of type **Line**:
 
 {% highlight java %}
-	public class Line {
+public class Line {
 
- 		private final String content;
-		private final int length;
-	
-		...
-	}
+    private final String content;
+    private final int length;
+
+    ...
+}
 {% endhighlight %}
 
 Using this solution we could count the characters of the lines correctly, and we brought the indexing time down from ~4hrs to ~5min.
