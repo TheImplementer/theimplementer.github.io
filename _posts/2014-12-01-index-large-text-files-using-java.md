@@ -9,7 +9,9 @@ We can later use the position to move quickly inside the file to retrieve the de
 
 In a first attempt we tried using the **RandomAccessFile** provided by Java. The method **getFilePointer** seemed to be exactly what we wanted, as the documentation says:
 
-`Returns the current offset in this file.`
+{% highlight %}
+Returns the current offset in this file.
+{% endhighlight %}
 
 The class was also really convenient because it provides the method **readLine** to iterate over the lines in the file.
 However, we soon realised that, even if the solution was working correctly, it was taking a huge amount of time to complete the indexing process. (in the order of hours)
@@ -20,10 +22,12 @@ Therefore, after investigating a little bit, we found out that the problem lies 
 At this point we thought we could use something smarter, like Java's **BufferedReader**. Since the class doesn't provide a way to retrieve the position of the reading pointer inside the file, we had to count the characters retrieved using the **readLine** manually.
 In this case the problem was another one. Reading the documentation of the **readLine** method we can see the following:
 
-`Reads a line of text. A line is considered to be terminated by any one of a line feed ('\n'), a carriage return ('\r'), or a carriage return followed immediately by a linefeed.
+{% highlight %}
+Reads a line of text. A line is considered to be terminated by any one of a line feed ('\n'), a carriage return ('\r'), or a carriage return followed immediately by a linefeed.
 
 Returns:
 A String containing the contents of the line, not including any line-termination characters, or null if the end of the stream has been reached`
+{% endhighlight %}
 
 Can you see it?
 The problem is that the line-termination character are not included in the read line, and we couldn't tell if the line was terminated by a single character (\n or \r) or two characters (\n\r).
